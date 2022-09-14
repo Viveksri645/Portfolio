@@ -1,0 +1,16 @@
+.ImageSlider{
+    border-radius: 10%;
+}
+
+.ImageSliderimg>img{
+  transform: scale(0.8);
+  border-radius: 5%;
+  margin: 0rem 0rem 1rem -3rem;
+}
+
+@media screen and (max-width: 480px){
+  .ImageSliderimg>img{
+    margin: -10rem;
+    transform: scale(0.6)!important;
+  }
+}

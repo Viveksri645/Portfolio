@@ -1,0 +1,39 @@
+.works{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    /* height: 90vh; */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+    position:relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index:-1 ;
+    border-radius: 20%;
+    box-shadow: var(--boxshadow);
+}
+
+@media screen and (max-width: 480px){
+    .works{
+        flex-direction: column;
+        left: -3rem;
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;   
+    }
+
+    .left{
+        width: 100%;
+    }
+}
