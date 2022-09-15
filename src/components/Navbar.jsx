@@ -1,5 +1,5 @@
 import React from 'react'
-import Toggle from './toggle/Toggle';
+// import Toggle from './toggle/Toggle';
 import {Link}  from 'react-scroll'
 import './Navbar.css';
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
                 <div className="n-name">
                     <span style={{ color: 'blue', fontSize: '2rem' }}>V</span>ivek
                 </div>
-                <Toggle />
+                {/* <Toggle /> */}
             </div>
             <div className="n-right">
                 <div className="n-list">
