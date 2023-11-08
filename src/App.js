@@ -1,28 +1,22 @@
-import Navbar from "./components/Navbar.jsx"
-import Intro from "./components/intro/Intro.jsx"
-import Services from "./components/services/Services.jsx";
-import Experience from "./components/experience/Experience.jsx"
-import Works from "./components/works/Works.jsx"
-import Portfolio from "./components/Portfolio/Portfolio.jsx";
-import Contact from "./components/contact/Contact.jsx";
-import Footer from "./components/footer/Footer.jsx";
-import { themeContext } from "./Context.js";
-import { useContext } from "react";
-import './App.css'
+import './App.css';
+import Navbar from './components/navbar/Navbar'
+import Intro from './components/intro/Intro'
+import About from './components/about/About'
+import Skills from './components/skills/Skills'
+import Education from './components/education/Education'
+import Portfolio from './components/portfolio/Portfolio'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
+// import Slides from './components/portfolio/carousel_1.json'
 
 function App() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
   return (
-    <div className="App" style={{
-      background: darkMode? 'black':'',
-      color: darkMode? 'white':''
-    }}>
-      <Navbar/>  
+    <div className="App">
+      <Navbar/>
       <Intro/>
-      <Services/>
-      <Experience/>
-      <Works/>
+      <About/>
+      <Skills/>
+      <Education/>
       <Portfolio/>
       <Contact/>
       <Footer/>

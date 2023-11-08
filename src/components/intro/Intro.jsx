@@ -1,67 +1,28 @@
 import React from 'react'
 import './Intro.css'
-import Typewriter from "typewriter-effect"
-import linkedin from '../../images/linkedin.png'
-import github from '../../images/github.png'
-import instagram from '../../images/instagram.png'
-import facebook from '../../images/facebook.png'
-import vivek1 from '../../images/vivek1.jpg'
-import Resume from '../services/Vivek_Srivastava_Resume.pdf'
+import profile_photo from '../../photoes/profile_photo.png'
 
-const intro = () => {
-
-  return (
-    <div className="intro" >
-      <div className="i-left">
-        <div className="i-name">
-          <span>Hey! I Am</span>
-          <span>Vivek Srivastava</span>
-          <span>And I am a </span>
-          <span>
-            <Typewriter
-              options={{
-                strings: ['Enthusiastic Developer', 'Front End Developer', 'Front End Developer', 'Machine Learning Enthusiast'],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-
-          </span>
-        </div>
-        <div className="group_btn">
-          <button className='button i-button'>Hire Me</button>
-          <a href= {Resume} download>
-            <button className='button i-button'>Get Resume</button>
-          </a>
-
-        </div>
-
-        <div className="i-images">
-          <a href="https://github.com/Viveksri645">
-            <img src={github} alt="linkedin" />
-          </a>
-          <a href="https://www.linkedin.com/in/vivek-srivastava-a6ba63203/">
-            <img src={linkedin} alt="linkedin" />
-          </a>
-          <a href="https://www.instagram.com/vivekshri99/">
-            <img src={instagram} alt="linkedin" />
-          </a>
-          <a href="https://m.facebook.com/100045073854002/">
-            <img src={facebook} alt="linkedin" />
-          </a>
-        </div>
-      </div>
-      <div className="i-right">
-        <div className="blur" style={{background: "rgb(238 210 255)"}}></div>
-        <div className="innerdiv1">
-          <img src={vivek1} alt="vivek.jpg" />
-        </div>
-        <div className="blur" style={{background: '#C1F5FF',
-                top: '17rem',
-                width: '21rem'}}></div>
-      </div>
-    </div>
-  )
+function Intro() {
+    return (
+        <>
+            <section id="intro">
+                <div className='intro-main'>
+                    <div className='intro-social-sites'>
+                        <a href='https://www.linkedin.com/in/vivek-srivastava-a6ba63203/'><i class='bx bxl-linkedin bx-md'></i></a>
+                        <a href='https://github.com/Viveksri645'><i class='bx bxl-github bx-md' ></i></a>
+                        <a href='https://leetcode.com/vivek645/'><i class='bx bx-code bx-md'></i></a>
+                    </div>
+                    <div className='introContent'>
+                        <span className='hello'>Hello,</span>
+                        <span className='introText'>I'm<span className='introName'>Vivek Srivastava</span><br />software developer.</span>
+                        <p className='introPara'>I am a skilled front end developer with experience of creating UI friendly websites.</p>
+                        <button className='intro-btn btn'>Hire Me</button>
+                    </div>
+                    <img src={profile_photo} alt='profile' className='intro-img'></img>
+                </div>
+            </section>
+        </>
+    )
 }
 
-export default intro
+export default Intro;

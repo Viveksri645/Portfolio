@@ -1,29 +1,38 @@
 import React from 'react'
 import './Contact.css'
-const Contact = () => {
- 
+
+function Contact() {
   return (
-    <div className="contact" id="Contact">
-      <h1 style={{ textAlign: "center", fontWeight: "bold", fontSize: "40px" }}><span style={{ fontWeight: "bold", fontSize: "40px", color: "blue" }}>Cont</span>act</h1>
-      <div className="contact-inner">
-
-        <div className="c-left">
-          <div className="awesome">
-            <span>Get in touch</span>
-            <span>Contact me</span>
+    <div className='contact-container'>
+      <div className='contact-main'>
+        <h1>Contact Me</h1>
+        <p>My Contact Details</p>
+        <div className='contact-block'>
+          <div className='left-contact-block'>
+            <h3>Talk to me</h3>
+            <div className='email contact-cart'>
+              <i class='bx bxs-envelope bx-md'></i>
+              <p>Email</p>
+              <p>vivek@gmail.com</p>
+            </div>
+            <div className='mob-no contact-cart'>
+              <i class='bx bxl-whatsapp bx-md'></i>
+              <p>Whatsapp</p>
+              <p>+917-000-890-1</p>
+            </div>
+            <div className='telegram-no contact-cart'>
+            <i class='bx bxl-telegram bx-md'></i>
+              <p>Telegram</p>
+              <p>+917-000-890-1</p>
+            </div>
           </div>
-          <div className="blur t-blur1" style={{ background: "var(--purple" }}></div>
-          <div className="blur t-blur2" style={{ background: "#ABF1FF94" }}></div>
-        </div>
-
-        <div className="c-right">
-          <form>
-            <input type="text" name="user name" className="user" placeholder="Name"></input>
-            <input type="email" name="user_mail" className="user" placeholder="Email"></input>
-            <textarea name="message" className="user" placeholder='Type Query here' ></textarea>
-            <input type="submit" value="send" className="button" ></input>
-
-          </form>
+          <div className='right-contact-block'>
+            <h3>Message me your query</h3>
+            <input className='txt'  type='text' placeholder='Name'/>
+            <input type='id' placeholder='Mail'/>
+            <textarea placeholder='Message'></textarea>
+            <button type='submit' className='contact-btn btn'>submit</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,44 +1,83 @@
-.portfolio{
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    /* border: 1px solid red; */
+}
+
+.portfolio-container h1{
+    color: var(--dark-gray);
+}
+
+.portfolio-content{
     display: flex;
     flex-direction: column;
-    height: 90vh; 
-    margin-bottom: 16rem;
+    align-items: center;
+}
+
+.portfolio-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    /* height: 30rem; */
     gap: 1rem;
     position: relative;
+    overflow: hidden;
+    margin: 2rem 0;
 }
 
-.container{
-    height: 95vh;
+.slide{
+    object-fit: cover;
+    object-position: center;
     width: 100%;
-    position: relative;
-    border-radius: 10%;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: -1;  
-    box-shadow: var(--boxshadow); 
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 7px #666;
+    /* width: 15rem;
+    height: 15rem; */
 }
 
-.portfoliobtn{
-    margin-top: 2rem;
-    margin-left: 1.5rem;
+.slide-hidden{
+    display: none;
 }
 
-.p-blur2{
-    left: 3rem;
-    top: 23rem;
+.arrow{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: var(--light-gray);
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #555);
 }
 
-@media screen and (max-width: 480px){
-    .portfolio{
-        margin-bottom: 12rem;
-        position: static;
-    }
-    .container{
-        left: 1.5rem;
-        height: 90vh;
-        width: 90%;
-    }
-    .portfoliobtn{
-        margin-top: 0rem;
-        margin-left: -19rem;
-    }
+.arrow-left{
+    left: 1rem;
+}
+
+.arrow-right{
+    right: 1rem;
+}
+
+.indicators{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.indicator{
+    background-color: var(--light-gray);
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #555;
+    margin: 0 0.25rem;
+    cursor: pointer;
+}
+
+.indicator-hidden{
+    background-color: var(--dark-gray);
 }

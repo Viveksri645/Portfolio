@@ -1,0 +1,144 @@
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 6px 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* filter: blur(1px); */
+    /* background: fixed; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    /* z-index: 1; */
+    /* border: 2px solid rgb(168, 99, 99); */
+    margin: 1rem 0;
+}
+
+.navbar h1{
+    font-family: 'Allison', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    color: var(--dark-gray);
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-list{
+    /* text-decoration: none; */
+    font-size: 1.2vw;
+    letter-spacing: 0.05rem;
+    position: relative;
+    color: var(--light-gray);
+    cursor: pointer;
+}
+
+/* .nav-links ul link li{
+    list-style-type: none;
+    
+} */
+
+.nav-list::after{
+    content: "";
+    background: var(--dark-gray);
+    position: absolute;
+    height: .1rem;
+    width: 100%; 
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+    transform-origin:right;   
+}
+
+.nav-list:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}
+
+.nav-list:hover{
+    color: var(--dark-gray);
+}
+
+/* .nav-links ul li:nth-child(1){
+    color: var(--off-white);
+    border: 2px solid var(--off-white);
+} */
+
+.nav-contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.2rem;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.nav-contact-btn p{
+    font-size: 1.2vw;
+}
+
+#nav-btn{
+    border-radius: 2rem;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav-links ul{
+        gap: 1rem;
+    }
+
+    .nav-links ul li a{
+        font-size: 1.8vw;
+    }
+
+    .nav-contact-btn p{
+        font-size: 1.8vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav-links ul {
+        gap: 1.5rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width:768px) {
+    /* .nav-links ul{
+        display: inline-flex;
+        gap: 1rem;
+    } */
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width:992px) {
+    
+}
+
+
