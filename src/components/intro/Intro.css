@@ -1,0 +1,109 @@
+#intro{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: calc(100vh);
+    overflow: hidden;
+}
+
+.intro-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 80%;
+    position: relative;
+    word-wrap: break-word;
+    gap: 2rem; 
+}
+
+.intro-social-sites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+.intro-social-sites i{
+    color: var(--dark-gray);
+}
+.introContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    /* border: 1px solid red; */
+}
+
+
+.hello{
+    font-family: Allison,cursive;
+    font-size: 3rem;
+}
+
+.introName{
+    padding: 0 0.5rem;
+    color: var(--off-white);
+}
+
+.introText{
+    font-size: 3rem;
+    font-weight: 700px;
+    color: var(--dark-gray);
+}
+
+.introPara{
+    font-size: 1rem;
+    color: black;
+    letter-spacing: 0.02rem;
+    width: 80%;
+}
+
+.intro-btn{
+    margin: 0.5rem 0;
+    transition: transform 1s ease-in-out;
+}
+
+.intro-btn:hover{
+    transform: scaleX(0.8);
+}
+.intro-img{
+    width: 15rem;
+    height: 15rem;
+    border: 8px solid var(--dark-gray);
+    animation: intro-img-ani 15s infinite ease-in-out;
+}
+
+
+@keyframes intro-img-ani{
+    0%{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    25%{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    50%{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 50%;
+    }
+    75%{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 100%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
