@@ -28,6 +28,7 @@
 }
 
 .intro-social-sites i{
+    /* color: var(--dark-gray); */
     color: var(--dark-gray);
 }
 .introContent{

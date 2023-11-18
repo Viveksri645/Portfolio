@@ -4,9 +4,9 @@
     align-items: center;
     width: 100%;
     box-shadow: 0 0 6px 1px;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
     /* filter: blur(1px); */
     /* background: fixed; */
 }
@@ -37,11 +37,12 @@
 
 .nav-list{
     /* text-decoration: none; */
-    font-size: 1.2vw;
+    font-size: 1rem;
     letter-spacing: 0.05rem;
     position: relative;
-    color: var(--light-gray);
+    color: #cbc1b9;
     cursor: pointer;
+    list-style-type: none;
 }
 
 /* .nav-links ul link li{
@@ -71,6 +72,7 @@
 .nav-list:hover{
     color: var(--dark-gray);
 }
+
 
 /* .nav-links ul li:nth-child(1){
     color: var(--off-white);
