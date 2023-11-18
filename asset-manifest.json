@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.f4ceb018.css",
+    "main.js": "/Portfolio/static/js/main.d835cdf7.js",
+    "static/media/profile_photo.png": "/Portfolio/static/media/profile_photo.2bcec75506268d826cb2.png",
+    "static/media/carousel2_fifth.png": "/Portfolio/static/media/carousel2_fifth.7f92a441c61ef3f8d6fd.png",
+    "static/media/second.png": "/Portfolio/static/media/second.7f398c0f2f1ee67a2cc3.png",
+    "static/media/carousel2_fourth.png": "/Portfolio/static/media/carousel2_fourth.5412bb378be4c488f79c.png",
+    "static/media/third.png": "/Portfolio/static/media/third.9a77df7b27c18d8f10fb.png",
+    "static/media/fifth.png": "/Portfolio/static/media/fifth.4860250a20e97d5492fd.png",
+    "static/media/sixth.png": "/Portfolio/static/media/sixth.31a3e1078c2617e405c2.png",
+    "static/media/first.png": "/Portfolio/static/media/first.8cf87bb2b2149e14946c.png",
+    "static/media/fourth.png": "/Portfolio/static/media/fourth.174c344e0a5cafc75788.png",
+    "static/media/carousel2_first.png": "/Portfolio/static/media/carousel2_first.3a21f42546c3c0777c42.png",
+    "static/media/carousel2_third.png": "/Portfolio/static/media/carousel2_third.4685dec9ebd2629c2226.png",
+    "static/media/carousel2_second.png": "/Portfolio/static/media/carousel2_second.971ad4ad0a70da6e81a8.png",
+    "static/media/vivek_srivastava_resume.pdf": "/Portfolio/static/media/vivek_srivastava_resume.d63ad58118218ab9a464.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.f4ceb018.css.map": "/Portfolio/static/css/main.f4ceb018.css.map",
+    "main.d835cdf7.js.map": "/Portfolio/static/js/main.d835cdf7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4ceb018.css",
+    "static/js/main.d835cdf7.js"
+  ]
+}
