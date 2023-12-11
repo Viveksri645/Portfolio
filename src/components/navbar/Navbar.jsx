@@ -1,41 +1,40 @@
-import React from 'react'
-import {Link}  from 'react-scroll'
+import React, { useState } from 'react'
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
+// import {Link}  from 'react-scroll'
 import './Navbar.css'
 
 function Navbar() {
+    const [toggle, setToggle] = useState(false);
     return (
-        <div className="navbar-container">
-            <div className='navbar'>
-                <h1>Vivek</h1>
-                <div className='nav-links'>
-                    <ul>
-                    <Link spy={true} to='intro' smooth={true}>
-                            <li className='nav-list'>Home</li>
-                    </Link>
-                    <Link spy={true} to='about' smooth={true}>
-                            <li className='nav-list'>About</li>
-                    </Link>
-                    <Link spy={true} to='skills' smooth={true}>
-                            <li className='nav-list'>Skills</li>
-                    </Link>
-                    <Link spy={true} to='education' smooth={true}>
-                            <li className='nav-list'>Education</li>
-                    </Link>
-                    <Link spy={true} to='portfolio' smooth={true}>
-                            <li className='nav-list'>Portfolio</li>
-                    </Link>
-                    <Link spy={true} to='Contact' smooth={true}>
-                            <li className='nav-list'>Contact</li>
-                    </Link>
-                        {/* <link to='About' spy={true} smooth={true}>About</link>
-                        <link to='Skills' spy={true} smooth={true}>Skills</link>
-                        <link to='Education' spy={true} smooth={true}>Education</link>
-                        <link to='Portfolio' spy={true} smooth={true}>Portfolio</link>
-                        <link to='Contact' spy={true} smooth={true}>Contact</link> */}
-                    </ul>
-                </div>
+        <nav className='app__navbar'>
+            <div className='app__navbar-logo'>
+                <a href='#home' className='app__navbar-heading'>VS.</a>
             </div>
-        </div>
+
+            <ul className='app__navbar-links'>
+                {['home', 'skills', 'work', 'certifications', 'about', 'contact'].map((item, index) => (
+                    <li className='app__navbar-link-item' key={index}>
+                        <a className='app__navbar-link-a' href={`#${item}`}>{item}</a>
+                    </li>
+                ))}
+            </ul>
+
+            <div className="app__navbar-menu">
+                <HiMenuAlt4 onClick={() => setToggle(true)} />
+                {toggle &&
+                    <div className='app__navbar-toggle-menu'>
+                        <HiX onClick={() => setToggle(false)} />
+                        <ul>
+                            {['home', 'skills', 'work', 'certifications', 'about', 'contact'].map((item, index) => (
+                                <li className='app__navbar-link-item' key={`link-${index}`}>
+                                    <a className='app__navbar-link-a' href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                }
+            </div>
+        </nav>
     )
 }
 

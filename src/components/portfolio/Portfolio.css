@@ -1,83 +1,142 @@
-.portfolio-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    /* border: 1px solid red; */
-}
-
-.portfolio-container h1{
-    color: var(--dark-gray);
-}
-
-.portfolio-content{
+.portfolio-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 1rem;
+
+    margin-top: 6rem;
 }
 
-.portfolio-projects{
+.portfolio-heading {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50rem;
-    /* height: 30rem; */
-    gap: 1rem;
-    position: relative;
-    overflow: hidden;
-    margin: 2rem 0;
+
+    margin-bottom: 1.5rem;
 }
 
-.slide{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 7px #666;
-    /* width: 15rem;
-    height: 15rem; */
+.portfolio-heading > h2 {
+    font-size: 1.5rem;
 }
 
-.slide-hidden{
-    display: none;
-}
-
-.arrow{
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    color: var(--light-gray);
-    cursor: pointer;
-    filter: drop-shadow(0 0 5px #555);
-}
-
-.arrow-left{
-    left: 1rem;
-}
-
-.arrow-right{
-    right: 1rem;
-}
-
-.indicators{
+.portfolio-content {
     display: flex;
-    position: absolute;
-    bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
 }
 
-.indicator{
-    background-color: var(--light-gray);
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 100%;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 5px #555;
-    margin: 0 0.25rem;
-    cursor: pointer;
+.portfolio-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 40%;
+    
+    box-shadow: 10px 10px 20px var(--primary-color), 10px 10px 20px var(--primary-color) inset;
+    border-bottom: 1px solid var(--secondary-color);
+    border-radius: 1rem;
 }
 
-.indicator-hidden{
-    background-color: var(--dark-gray);
+.portfolio-cart > img {
+    width: 90%;
+    margin: 0.5rem;
+    min-height: 40vh;
+    object-fit: cover;
+    border-bottom: 0.5px solid blue;
+}
+
+.portfolio-cart > img:hover {
+    transform: scale(0.9);
+}
+
+.portfolio-cart-text {
+    width: auto;
+    margin: 0.5rem;
+    min-height: 40vh;
+    text-wrap: wrap;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+
+.portfolio-cart-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.portfolio-cart-btn-group > a, .portfolio-cart-btn {
+    width: 30%;
+    background: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--black-color);
+    padding: 0.5rem 1rem;
+}
+
+.portfolio-cart-btn-group > a:hover, .portfolio-cart-btn:hover{
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+
+
+/* media queries */
+@media screen and (min-width:240px) and (max-width: 420px) {
+    .portfolio-cart {
+        max-width: 100%;
+    }
+
+    .portfolio-cart-btn-group > a, .portfolio-cart-btn {
+        width: 40%;
+    }
+
+    .portfolio-heading > h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 480px) {
+    .portfolio-cart {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .portfolio-cart {
+        max-width: 80%;
+    }
+
+    .portfolio-cart > img {
+        min-height: 45vh;
+    }
+
+    .portfolio-cart-text {
+        min-height: 45vh;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+    .portfolio-cart {
+        max-width: 60%;
+    }
 }

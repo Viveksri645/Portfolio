@@ -10,3 +10,11 @@ root.render(
   </React.StrictMode>
 );
 
+setTimeout(() => {
+  const nav_height = document.querySelector('.app__navbar').offsetHeight;
+  console.log(nav_height);
+  document.documentElement.style.setProperty('--scroll-padding', nav_height + 16 + 'px');
+}, 1000);
+
+
+

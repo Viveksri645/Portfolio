@@ -2,21 +2,22 @@ import Navbar from './components/navbar/Navbar'
 import Intro from './components/intro/Intro'
 import About from './components/about/About'
 import Skills from './components/skills/Skills'
-import Education from './components/education/Education'
+import Certification from './components/certification/Certification'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 // import Slides from './components/portfolio/carousel_1.json'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar/>
       <Intro/>
-      <About/>
       <Skills/>
-      <Education/>
       <Portfolio/>
+      <Certification/>
+      <About/>
       <Contact/>
       <Footer/>
     </div>
